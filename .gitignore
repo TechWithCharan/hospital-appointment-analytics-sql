@@ -1,0 +1,95 @@
+# Hospital Appointment Analytics SQL Project - .gitignore
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.mysql
+*.myd
+*.myi
+*.frm
+*.ibd
+
+# Backup files
+*.backup
+*.bak
+*_backup.sql
+*_backup.csv
+
+# Log files
+*.log
+mysql.log
+error.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data export files
+exports/
+output/
+results/
+query_results/
+analysis_output/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Documentation build files
+docs/_build/
+docs/.doctrees/
+
+# Node modules (if using any JavaScript tools)
+node_modules/
+
+# Python cache (if using Python scripts)
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks (if using for analysis)
+*.ipynb_checkpoints/
+
+# Excel files (if exporting results)
+*.xlsx
+*.xls
+
+# PDF files (if generating reports)
+*.pdf
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# MySQL specific
+mysql-bin.*
+mysql-relay-bin.*
+*.err
+*.pid
+*.sock
+
+# Keep the sample data files
+!data/patients.csv
+!data/doctors.csv
+!data/appointments.csv
+
+# Exclude output files with sensitive database information
+output.txt
+*.output 

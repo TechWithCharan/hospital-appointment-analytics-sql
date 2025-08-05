@@ -1,0 +1,26 @@
+patient_id,age,gender,insurance_type,has_chronic_disease,diabetic,blood_group,emergency_contact,address_city,occupation,marital_status,income_level,preferred_language,last_visit_date,patient_since
+1,45,Male,Private,Yes,No,A+,9876543210,Hyderabad,Engineer,Married,High,English,2023-12-15,2020-03-10
+2,62,Female,Public,Yes,Yes,B+,8765432109,Chennai,Teacher,Widowed,Medium,Tamil,2023-11-20,2018-07-22
+3,29,Female,Private,No,No,O+,7654321098,Bangalore,Software Developer,Single,High,English,2023-12-10,2021-09-15
+4,70,Male,Public,Yes,Yes,AB+,6543210987,Mumbai,Retired,Married,Low,Hindi,2023-10-25,2015-11-30
+5,34,Male,Private,No,No,B-,5432109876,Delhi,Manager,Married,High,English,2023-12-05,2022-01-12
+6,28,Female,Private,No,No,A-,4321098765,Pune,Designer,Single,Medium,English,2023-11-30,2021-06-08
+7,55,Male,Public,Yes,No,O-,3210987654,Kolkata,Accountant,Married,Medium,Bengali,2023-12-01,2019-04-18
+8,41,Female,Private,No,Yes,A+,2109876543,Ahmedabad,Doctor,Married,High,Gujarati,2023-11-25,2020-08-05
+9,67,Male,Public,Yes,Yes,B+,1098765432,Jaipur,Retired,Widowed,Low,Hindi,2023-10-30,2017-12-03
+10,23,Female,Private,No,No,O+,0987654321,Indore,Student,Single,Low,English,2023-12-12,2022-11-20
+11,52,Female,Public,Yes,No,AB-,9876543211,Patna,Teacher,Married,Medium,Hindi,2023-11-18,2018-09-14
+12,38,Male,Private,No,No,A+,8765432101,Chandigarh,Engineer,Married,High,English,2023-12-08,2021-03-25
+13,71,Male,Public,Yes,Yes,B+,7654321091,Lucknow,Retired,Married,Low,Hindi,2023-10-22,2016-05-12
+14,26,Female,Private,No,No,O+,6543210981,Surat,Marketing Executive,Single,Medium,Gujarati,2023-11-28,2022-07-30
+15,48,Male,Private,Yes,No,A-,5432109871,Nagpur,Business Owner,Married,High,English,2023-12-03,2019-11-08
+16,33,Female,Public,No,No,B-,4321098761,Thane,Nurse,Single,Medium,English,2023-11-15,2021-12-10
+17,59,Male,Private,Yes,Yes,O+,3210987651,Vadodara,Professor,Married,High,Gujarati,2023-10-28,2018-02-15
+18,31,Female,Private,No,No,AB+,2109876541,Coimbatore,Architect,Single,High,Tamil,2023-12-07,2022-04-22
+19,64,Female,Public,Yes,Yes,A+,1098765431,Visakhapatnam,Retired,Widowed,Low,Telugu,2023-11-12,2017-08-19
+20,27,Male,Private,No,No,B+,0987654321,Guwahati,Software Engineer,Single,High,English,2023-12-14,2021-10-05
+21,42,Male,Private,Yes,No,O+,9876543212,Bhopal,Lawyer,Married,High,Hindi,2023-12-16,2020-05-18
+22,35,Female,Public,No,No,A+,8765432102,Raipur,Teacher,Married,Medium,Hindi,2023-11-25,2021-08-12
+23,58,Male,Private,Yes,Yes,B+,7654321092,Dehradun,Retired,Married,Medium,English,2023-10-30,2018-11-05
+24,24,Female,Private,No,No,O+,6543210982,Shimla,Student,Single,Low,English,2023-12-10,2022-03-20
+25,49,Male,Public,Yes,No,AB+,5432109872,Agartala,Government Employee,Married,Medium,Bengali,2023-11-28,2019-06-15 

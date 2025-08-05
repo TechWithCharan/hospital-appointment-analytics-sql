@@ -1,0 +1,21 @@
+doctor_id,doctor_name,department,specialization,experience_years,qualification,consultation_fee,working_hours,phone_number,email,join_date,is_active,rating,total_patients,emergency_available
+201,Dr. Ramesh Rao,Cardiology,Interventional Cardiologist,15,MBBS MD Cardiology,1200,9-5,9876543210,ramesh.rao@hospital.com,2018-03-15,Yes,4.5,1250,Yes
+202,Dr. Sneha Verma,Orthopedics,Orthopedic Surgeon,12,MBBS MS Orthopedics,1500,8-6,8765432109,sneha.verma@hospital.com,2019-07-22,Yes,4.8,980,Yes
+203,Dr. Ali Syed,Neurology,Neurologist,18,MBBS MD Neurology,1800,9-5,7654321098,ali.syed@hospital.com,2017-11-10,Yes,4.6,1100,No
+204,Dr. Keerthi N,Pediatrics,Pediatrician,8,MBBS MD Pediatrics,800,8-4,6543210987,keerthi.n@hospital.com,2020-01-20,Yes,4.7,850,Yes
+205,Dr. Priya Sharma,Dermatology,Dermatologist,10,MBBS MD Dermatology,1000,9-5,5432109876,priya.sharma@hospital.com,2019-09-15,Yes,4.4,720,No
+206,Dr. Rajesh Kumar,General Surgery,General Surgeon,14,MBBS MS General Surgery,2000,8-6,4321098765,rajesh.kumar@hospital.com,2018-05-12,Yes,4.9,890,Yes
+207,Dr. Anjali Patel,Obstetrics,Obstetrician,11,MBBS MS Obstetrics,1600,9-5,3210987654,anjali.patel@hospital.com,2019-12-03,Yes,4.6,650,Yes
+208,Dr. Suresh Menon,Psychiatry,Psychiatrist,16,MBBS MD Psychiatry,1400,10-6,2109876543,suresh.menon@hospital.com,2017-08-18,Yes,4.3,580,No
+209,Dr. Meera Iyer,Oncology,Oncologist,20,MBBS MD Oncology,2500,9-5,1098765432,meera.iyer@hospital.com,2016-04-25,Yes,4.8,420,Yes
+210,Dr. Vikram Singh,Emergency Medicine,Emergency Physician,9,MBBS MD Emergency Medicine,1200,12-12,0987654321,vikram.singh@hospital.com,2020-06-10,Yes,4.5,1500,Yes
+211,Dr. Lakshmi Devi,Endocrinology,Endocrinologist,13,MBBS MD Endocrinology,1600,9-5,9876543211,lakshmi.devi@hospital.com,2018-10-08,Yes,4.7,680,No
+212,Dr. Arun Joshi,Radiology,Radiologist,12,MBBS MD Radiology,1100,8-4,8765432101,arun.joshi@hospital.com,2019-02-14,Yes,4.4,920,No
+213,Dr. Sunita Reddy,ENT,ENT Specialist,10,MBBS MS ENT,900,9-5,7654321091,sunita.reddy@hospital.com,2020-03-30,Yes,4.6,750,No
+214,Dr. Manoj Gupta,Urology,Urologist,15,MBBS MS Urology,1700,9-5,6543210981,manoj.gupta@hospital.com,2018-07-05,Yes,4.8,620,Yes
+215,Dr. Kavita Desai,Anesthesiology,Anesthesiologist,11,MBBS MD Anesthesiology,1300,8-6,5432109871,kavita.desai@hospital.com,2019-11-12,Yes,4.5,1100,Yes
+216,Dr. Amit Patel,Cardiology,Cardiologist,14,MBBS MD Cardiology,1400,9-5,4321098761,amit.patel@hospital.com,2018-09-15,Yes,4.6,1150,Yes
+217,Dr. Reena Sharma,Orthopedics,Orthopedic Surgeon,13,MBBS MS Orthopedics,1600,8-6,3210987651,reena.sharma@hospital.com,2019-04-20,Yes,4.7,920,Yes
+218,Dr. Deepak Verma,Neurology,Neurologist,16,MBBS MD Neurology,1900,9-5,2109876541,deepak.verma@hospital.com,2017-12-08,Yes,4.5,1050,No
+219,Dr. Neha Gupta,Pediatrics,Pediatrician,9,MBBS MD Pediatrics,900,8-4,1098765431,neha.gupta@hospital.com,2020-08-12,Yes,4.8,780,Yes
+220,Dr. Rajiv Malhotra,Dermatology,Dermatologist,11,MBBS MD Dermatology,1100,9-5,0987654321,rajiv.malhotra@hospital.com,2019-06-25,Yes,4.3,650,No 

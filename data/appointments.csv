@@ -1,0 +1,61 @@
+appointment_id,patient_id,doctor_id,department,scheduled_date,appointment_date,appointment_time,status,appointment_type,consultation_duration,waiting_time_minutes,feedback_rating,payment_status,payment_method,diagnosis,prescription_given,lab_tests_ordered,follow_up_required,follow_up_date,notes
+1001,1,201,Cardiology,2023-10-01,2023-10-05,09:00:00,No-Show,Routine,30,0,NULL,Pending,Credit Card,NULL,No,No,No,NULL,Patient did not show up
+1002,2,202,Orthopedics,2023-10-02,2023-10-06,14:30:00,Attended,Emergency,45,15,4,Paid,Cash,Fracture,Yes,Yes,Yes,2023-10-20,Patient needs follow-up for fracture healing
+1003,3,203,Neurology,2023-10-03,2023-10-10,11:00:00,No-Show,Follow-up,30,0,NULL,Pending,Debit Card,NULL,No,No,No,NULL,Patient missed follow-up appointment
+1004,4,201,Cardiology,2023-10-04,2023-10-07,10:30:00,Attended,Routine,40,20,5,Paid,Insurance,Hypertension,Yes,Yes,Yes,2023-11-07,Blood pressure under control
+1005,5,204,Pediatrics,2023-10-06,2023-10-10,15:00:00,Attended,Routine,25,10,3,Paid,Cash,Common Cold,Yes,No,No,NULL,Simple viral infection
+1006,6,205,Dermatology,2023-10-07,2023-10-12,13:00:00,Attended,Routine,35,25,4,Paid,Credit Card,Skin Allergy,Yes,Yes,Yes,2023-10-26,Allergic reaction to new soap
+1007,7,206,General Surgery,2023-10-08,2023-10-13,08:00:00,Attended,Emergency,60,5,5,Paid,Insurance,Appendicitis,Yes,Yes,Yes,2023-10-27,Surgery scheduled for next week
+1008,8,207,Obstetrics,2023-10-09,2023-10-14,16:00:00,No-Show,Routine,30,0,NULL,Pending,Cash,NULL,No,No,No,NULL,Regular checkup missed
+1009,9,208,Psychiatry,2023-10-10,2023-10-15,12:00:00,Attended,Follow-up,50,30,4,Paid,Debit Card,Depression,Yes,No,Yes,2023-11-15,Patient showing improvement
+1010,10,209,Oncology,2023-10-11,2023-10-16,09:30:00,Attended,Routine,45,15,5,Paid,Insurance,Cancer Screening,Yes,Yes,Yes,2023-11-16,All tests normal
+1011,11,210,Emergency Medicine,2023-10-12,2023-10-17,22:00:00,Attended,Emergency,30,0,4,Paid,Cash,Accident,Yes,Yes,Yes,2023-10-24,"Minor accident, stitches required"
+1012,12,211,Endocrinology,2023-10-13,2023-10-18,14:00:00,Attended,Routine,40,20,4,Paid,Insurance,Diabetes,Yes,Yes,Yes,2023-11-18,Sugar levels stable
+1013,13,212,Radiology,2023-10-14,2023-10-19,10:00:00,No-Show,Routine,20,0,NULL,Pending,Credit Card,NULL,No,No,No,NULL,X-ray appointment missed
+1014,14,213,ENT,2023-10-15,2023-10-20,11:30:00,Attended,Routine,30,15,3,Paid,Cash,Ear Infection,Yes,No,No,NULL,Simple ear infection
+1015,15,214,Urology,2023-10-16,2023-10-21,15:30:00,Attended,Follow-up,35,25,4,Paid,Insurance,Kidney Stone,Yes,Yes,Yes,2023-11-21,Stone passed naturally
+1016,16,215,Anesthesiology,2023-10-17,2023-10-22,08:30:00,Attended,Routine,25,10,4,Paid,Debit Card,Pre-surgery Check,Yes,Yes,Yes,2023-10-29,Surgery scheduled
+1017,17,201,Cardiology,2023-10-18,2023-10-23,13:30:00,No-Show,Follow-up,30,0,NULL,Pending,Cash,NULL,No,No,No,NULL,Follow-up missed
+1018,18,202,Orthopedics,2023-10-19,2023-10-24,16:00:00,Attended,Routine,40,20,5,Paid,Insurance,Back Pain,Yes,Yes,Yes,2023-11-24,Physiotherapy recommended
+1019,19,203,Neurology,2023-10-20,2023-10-25,09:00:00,Attended,Routine,45,15,4,Paid,Credit Card,Migraine,Yes,No,Yes,2023-11-25,Headache frequency reduced
+1020,20,204,Pediatrics,2023-10-21,2023-10-26,14:00:00,Attended,Emergency,30,5,4,Paid,Cash,Fever,Yes,Yes,No,NULL,High fever antibiotics prescribed
+1021,1,205,Dermatology,2023-10-22,2023-10-27,11:00:00,Attended,Follow-up,25,15,4,Paid,Insurance,Eczema,Yes,No,Yes,2023-11-27,Skin condition improving
+1022,2,206,General Surgery,2023-10-23,2023-10-28,08:00:00,No-Show,Routine,30,0,NULL,Pending,Debit Card,NULL,No,No,No,NULL,Regular checkup missed
+1023,3,207,Obstetrics,2023-10-24,2023-10-29,15:30:00,Attended,Routine,35,20,5,Paid,Cash,Pregnancy Check,Yes,Yes,Yes,2023-11-29,Everything normal
+1024,4,208,Psychiatry,2023-10-25,2023-10-30,12:30:00,Attended,Follow-up,50,30,4,Paid,Insurance,Anxiety,Yes,No,Yes,2023-11-30,Medication adjusted
+1025,5,209,Oncology,2023-10-26,2023-11-01,10:00:00,Attended,Routine,45,15,5,Paid,Credit Card,Cancer Screening,Yes,Yes,Yes,2023-12-01,All clear
+1026,6,210,Emergency Medicine,2023-10-27,2023-11-02,21:00:00,Attended,Emergency,25,0,4,Paid,Cash,Chest Pain,Yes,Yes,Yes,2023-11-09,ECG normal
+1027,7,211,Endocrinology,2023-10-28,2023-11-03,14:30:00,Attended,Routine,40,20,4,Paid,Insurance,Thyroid,Yes,Yes,Yes,2023-12-03,Thyroid levels stable
+1028,8,212,Radiology,2023-10-29,2023-11-04,09:30:00,Attended,Routine,20,10,3,Paid,Debit Card,X-ray,Yes,No,No,NULL,Simple X-ray
+1029,9,213,ENT,2023-10-30,2023-11-05,11:00:00,No-Show,Routine,30,0,NULL,Pending,Cash,NULL,No,No,No,NULL,Regular checkup missed
+1030,10,214,Urology,2023-10-31,2023-11-06,16:30:00,Attended,Follow-up,35,25,4,Paid,Insurance,Prostate Check,Yes,Yes,Yes,2023-12-06,All normal
+1031,11,215,Anesthesiology,2023-11-01,2023-11-07,08:00:00,Attended,Routine,25,10,4,Paid,Credit Card,Pre-surgery,Yes,Yes,Yes,2023-11-14,Surgery scheduled
+1032,12,201,Cardiology,2023-11-02,2023-11-08,13:00:00,Attended,Routine,40,20,5,Paid,Insurance,Heart Check,Yes,Yes,Yes,2023-12-08,Heart function normal
+1033,13,202,Orthopedics,2023-11-03,2023-11-09,15:00:00,No-Show,Follow-up,30,0,NULL,Pending,Cash,NULL,No,No,No,NULL,Follow-up missed
+1034,14,203,Neurology,2023-11-04,2023-11-10,10:30:00,Attended,Routine,45,15,4,Paid,Debit Card,Seizure,Yes,Yes,Yes,2023-12-10,Medication working
+1035,15,204,Pediatrics,2023-11-05,2023-11-11,14:00:00,Attended,Emergency,30,5,4,Paid,Cash,Accident,Yes,Yes,Yes,2023-11-18,Minor injury
+1036,16,205,Dermatology,2023-11-06,2023-11-12,12:00:00,Attended,Routine,35,20,4,Paid,Insurance,Psoriasis,Yes,No,Yes,2023-12-12,Treatment effective
+1037,17,206,General Surgery,2023-11-07,2023-11-13,08:30:00,Attended,Routine,30,15,4,Paid,Credit Card,Hernia,Yes,Yes,Yes,2023-12-13,Surgery recommended
+1038,18,207,Obstetrics,2023-11-08,2023-11-14,16:00:00,Attended,Routine,35,25,5,Paid,Cash,Pregnancy,Yes,Yes,Yes,2023-12-14,First trimester
+1039,19,208,Psychiatry,2023-11-09,2023-11-15,12:00:00,No-Show,Follow-up,50,0,NULL,Pending,Debit Card,NULL,No,No,No,NULL,Follow-up missed
+1040,20,209,Oncology,2023-11-10,2023-11-16,09:00:00,Attended,Routine,45,15,5,Paid,Insurance,Screening,Yes,Yes,Yes,2023-12-16,All tests normal
+1041,1,210,Emergency Medicine,2023-11-11,2023-11-17,14:30:00,Attended,Emergency,35,5,4,Paid,Cash,Minor Injury,Yes,Yes,Yes,2023-11-26,Quick treatment
+1042,2,211,Endocrinology,2023-11-12,2023-11-18,10:00:00,Attended,Routine,40,20,4,Paid,Insurance,Diabetes Check,Yes,Yes,Yes,2023-12-18,Stable condition
+1043,3,212,Radiology,2023-11-13,2023-11-19,11:30:00,Attended,Routine,20,10,3,Paid,Debit Card,CT Scan,Yes,No,No,NULL,Routine scan
+1044,4,213,ENT,2023-11-14,2023-11-20,13:00:00,Attended,Follow-up,30,15,4,Paid,Cash,Sinusitis,Yes,No,Yes,2023-12-20,Improving condition
+1045,5,214,Urology,2023-11-15,2023-11-21,15:30:00,Attended,Routine,35,25,4,Paid,Insurance,Bladder Check,Yes,Yes,Yes,2023-12-21,All normal
+1046,6,215,Anesthesiology,2023-11-16,2023-11-22,08:00:00,Attended,Routine,25,10,4,Paid,Credit Card,Pre-op,Yes,Yes,Yes,2023-11-29,Surgery prep
+1047,7,201,Cardiology,2023-11-17,2023-11-23,12:30:00,Attended,Follow-up,40,20,5,Paid,Insurance,Heart Follow-up,Yes,Yes,Yes,2023-12-23,Stable condition
+1048,8,202,Orthopedics,2023-11-18,2023-11-24,14:00:00,Attended,Routine,40,20,4,Paid,Cash,Joint Pain,Yes,Yes,Yes,2023-12-24,Physiotherapy recommended
+1049,9,203,Neurology,2023-11-19,2023-11-25,09:30:00,Attended,Follow-up,45,15,4,Paid,Debit Card,Epilepsy,Yes,Yes,Yes,2023-12-25,Medication stable
+1050,10,204,Pediatrics,2023-11-20,2023-11-26,14:00:00,Attended,Emergency,30,5,4,Paid,Cash,Accident,Yes,Yes,Yes,2023-11-26,Minor injury
+1051,21,216,Cardiology,2023-11-21,2023-11-27,10:00:00,Attended,Routine,40,15,4,Paid,Insurance,Heart Check,Yes,Yes,Yes,2023-12-27,Regular checkup
+1052,22,217,Orthopedics,2023-11-22,2023-11-28,14:30:00,Attended,Routine,35,20,4,Paid,Cash,Knee Pain,Yes,No,Yes,2023-12-28,Physiotherapy recommended
+1053,23,218,Neurology,2023-11-23,2023-11-29,11:00:00,Attended,Follow-up,45,10,4,Paid,Debit Card,Stroke Follow-up,Yes,Yes,Yes,2023-12-29,Recovery progressing
+1054,24,219,Pediatrics,2023-11-24,2023-11-30,15:00:00,Attended,Routine,25,15,5,Paid,Insurance,Vaccination,Yes,No,No,NULL,Regular vaccination
+1055,25,220,Dermatology,2023-11-25,2023-12-01,13:00:00,Attended,Routine,30,20,4,Paid,Cash,Skin Rash,Yes,No,Yes,2023-12-15,Allergic reaction
+1056,21,201,Cardiology,2023-11-26,2023-12-02,09:30:00,Attended,Emergency,35,5,4,Paid,Insurance,Chest Pain,Yes,Yes,Yes,2023-12-09,Emergency treatment
+1057,22,202,Orthopedics,2023-11-27,2023-12-03,16:00:00,No-Show,Routine,30,0,NULL,Pending,Cash,NULL,No,No,No,NULL,Appointment missed
+1058,23,203,Neurology,2023-11-28,2023-12-04,12:00:00,Attended,Routine,40,25,4,Paid,Debit Card,Headache,Yes,No,No,NULL,Stress related
+1059,24,204,Pediatrics,2023-11-29,2023-12-05,14:30:00,Attended,Emergency,30,10,4,Paid,Cash,Fever,Yes,Yes,Yes,2023-12-12,High temperature
+1060,25,205,Dermatology,2023-11-30,2023-12-06,11:00:00,Attended,Routine,35,15,4,Paid,Insurance,Acne,Yes,No,Yes,2023-12-20,Treatment started 

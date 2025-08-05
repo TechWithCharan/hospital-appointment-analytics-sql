@@ -1,0 +1,203 @@
+================================================================================
+                    HOSPITAL APPOINTMENT ANALYTICS - ERD
+================================================================================
+
+Author: Sankavaram Charan Sai
+Date: 2025-08-05
+Project: Hospital Appointment Analytics SQL Project
+LinkedIn: https://www.linkedin.com/in/s-charan-sai-16613b245/
+GitHub: https://github.com/TechWithCharan
+Email: charansaicherry2004@gmail.com
+
+================================================================================
+                                ENTITY RELATIONSHIP DIAGRAM
+================================================================================
+
++------------------------+       +------------------------+       +------------------------+
+|       PATIENTS         |       |      APPOINTMENTS      |       |       DOCTORS          |
++------------------------+       +------------------------+       +------------------------+
+| PK: patient_id (INT)   |       | PK: appointment_id     |       | PK: doctor_id (INT)    |
+| age (INT)              |       | (INT)                  |       | doctor_name (VARCHAR)  |
+| gender (VARCHAR)       |       | FK: patient_id (INT)   |       | department (VARCHAR)   |
+| insurance_type         |       | FK: doctor_id (INT)    |       | specialization         |
+| (VARCHAR)              |       | department (VARCHAR)   |       | (VARCHAR)              |
+| has_chronic_disease    |       | scheduled_date (DATE)  |       | experience_years (INT) |
+| (VARCHAR)              |       | appointment_date       |       | qualification          |
+| diabetic (VARCHAR)     |       | (DATE)                 |       | (VARCHAR)              |
+| blood_group (VARCHAR)  |       | appointment_time       |       | consultation_fee       |
+| emergency_contact      |       | (TIME)                 |       | (DECIMAL)              |
+| (VARCHAR)              |       | status (VARCHAR)       |       | working_hours          |
+| address_city (VARCHAR) |       | appointment_type       |       | (VARCHAR)              |
+| occupation (VARCHAR)   |       | (VARCHAR)              |       | phone_number (VARCHAR) |
+| marital_status         |       | consultation_duration  |       | email (VARCHAR)        |
+| (VARCHAR)              |       | (INT)                  |       | join_date (DATE)       |
+| income_level (VARCHAR) |       | waiting_time_minutes   |       | is_active (VARCHAR)    |
+| preferred_language     |       | (INT)                  |       | rating (DECIMAL)       |
+| (VARCHAR)              |       | feedback_rating (INT)  |       | total_patients (INT)   |
+| last_visit_date (DATE) |       | payment_status         |       | emergency_available    |
+| patient_since (DATE)   |       | (VARCHAR)              |       | (VARCHAR)              |
++------------------------+       | payment_method         |       +------------------------+
+                                 | (VARCHAR)              |
+                                 | diagnosis (TEXT)       |
+                                 | prescription_given     |
+                                 | (VARCHAR)              |
+                                 | lab_tests_ordered      |
+                                 | (VARCHAR)              |
+                                 | follow_up_required     |
+                                 | (VARCHAR)              |
+                                 | follow_up_date (DATE)  |
+                                 | notes (TEXT)           |
+                                 +------------------------+
+
+================================================================================
+                                RELATIONSHIPS
+================================================================================
+
+1. PATIENTS (1) -----> (N) APPOINTMENTS
+   - One patient can have multiple appointments
+   - Each appointment belongs to exactly one patient
+   - Foreign Key: appointments.patient_id -> patients.patient_id
+
+2. DOCTORS (1) -----> (N) APPOINTMENTS
+   - One doctor can have multiple appointments
+   - Each appointment is handled by exactly one doctor
+   - Foreign Key: appointments.doctor_id -> doctors.doctor_id
+
+================================================================================
+                                DATA TYPES & CONSTRAINTS
+================================================================================
+
+PATIENTS TABLE:
+- patient_id: Primary Key, Auto-increment
+- age: CHECK constraint (0 < age < 150)
+- gender: CHECK constraint ('Male', 'Female')
+- insurance_type: CHECK constraint ('Private', 'Public')
+- has_chronic_disease: CHECK constraint ('Yes', 'No')
+- diabetic: CHECK constraint ('Yes', 'No')
+- income_level: CHECK constraint ('Low', 'Medium', 'High')
+
+DOCTORS TABLE:
+- doctor_id: Primary Key, Auto-increment
+- experience_years: CHECK constraint (>= 0)
+- consultation_fee: CHECK constraint (>= 0)
+- rating: CHECK constraint (0 <= rating <= 5)
+- is_active: CHECK constraint ('Yes', 'No')
+- emergency_available: CHECK constraint ('Yes', 'No')
+
+APPOINTMENTS TABLE:
+- appointment_id: Primary Key, Auto-increment
+- status: CHECK constraint ('Attended', 'No-Show')
+- appointment_type: CHECK constraint ('Routine', 'Emergency', 'Follow-up')
+- consultation_duration: CHECK constraint (> 0)
+- waiting_time_minutes: CHECK constraint (>= 0)
+- feedback_rating: CHECK constraint (1 <= rating <= 5)
+- payment_status: CHECK constraint ('Paid', 'Pending')
+- prescription_given: CHECK constraint ('Yes', 'No')
+- lab_tests_ordered: CHECK constraint ('Yes', 'No')
+- follow_up_required: CHECK constraint ('Yes', 'No')
+
+================================================================================
+                                INDEXES
+================================================================================
+
+PATIENTS TABLE:
+- idx_patients_age: Index on age column
+- idx_patients_gender: Index on gender column
+- idx_patients_insurance: Index on insurance_type column
+- idx_patients_chronic: Index on has_chronic_disease column
+
+DOCTORS TABLE:
+- idx_doctors_department: Index on department column
+- idx_doctors_experience: Index on experience_years column
+- idx_doctors_rating: Index on rating column
+
+APPOINTMENTS TABLE:
+- idx_appointments_patient_id: Index on patient_id column
+- idx_appointments_doctor_id: Index on doctor_id column
+- idx_appointments_status: Index on status column
+- idx_appointments_date: Index on appointment_date column
+- idx_appointments_department: Index on department column
+- idx_appointments_type: Index on appointment_type column
+
+================================================================================
+                                SAMPLE DATA SUMMARY
+================================================================================
+
+PATIENTS TABLE: 20 records
+- Age range: 23-71 years
+- Gender distribution: 10 Male, 10 Female
+- Insurance types: Private (12), Public (8)
+- Chronic diseases: Yes (10), No (10)
+- Income levels: Low (5), Medium (6), High (9)
+
+DOCTORS TABLE: 15 records
+- Departments: 15 different medical departments
+- Experience range: 8-20 years
+- Consultation fees: ₹800-₹2500
+- Ratings: 3.0-4.9 (average: 4.4)
+- All doctors are active and available
+
+APPOINTMENTS TABLE: 50 records
+- Status: Attended (31), No-Show (9)
+- Types: Routine (25), Emergency (6), Follow-up (9)
+- Departments: All 15 departments represented
+- Date range: October-November 2023
+- Payment methods: Cash, Insurance, Credit Card, Debit Card
+
+================================================================================
+                                ANALYSIS CAPABILITIES
+================================================================================
+
+This ERD supports comprehensive hospital analytics including:
+
+1. NO-SHOW ANALYSIS
+   - Department-wise no-show rates
+   - Doctor-specific patterns
+   - Temporal analysis (day/time)
+   - Patient demographic correlation
+
+2. OPERATIONAL ANALYSIS
+   - Waiting time optimization
+   - Resource utilization
+   - Scheduling efficiency
+   - Department performance
+
+3. FINANCIAL ANALYSIS
+   - Revenue impact of no-shows
+   - Payment pattern analysis
+   - Insurance vs cash comparison
+   - Cost optimization
+
+4. PATIENT BEHAVIOR ANALYSIS
+   - Loyalty metrics
+   - Risk assessment
+   - Retention analysis
+   - Demographic patterns
+
+5. DOCTOR PERFORMANCE ANALYSIS
+   - Workload distribution
+   - Patient satisfaction
+   - Efficiency metrics
+   - Department comparison
+
+================================================================================
+                                TECHNICAL SPECIFICATIONS
+================================================================================
+
+Database System: MySQL 8.0.16+
+Character Set: UTF-8
+Collation: utf8mb4_unicode_ci
+Storage Engine: InnoDB
+
+File Structure:
+- schema.sql: Database structure and constraints
+- insert_data.sql: Sample data (85+ records)
+- comprehensive_analysis.sql: 32+ analytical queries
+- mysql_practice_exercises.sql: 13 learning exercises
+
+================================================================================
+                                END OF ERD
+================================================================================
+
+Note: This ERD represents a comprehensive hospital appointment analytics system
+designed for educational purposes with realistic but anonymized data. 
